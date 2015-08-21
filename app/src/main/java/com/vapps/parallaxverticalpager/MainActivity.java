@@ -10,8 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -22,18 +20,18 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private VerticalViewPager verticalViewPager;
+    private VerticalParallaxPager verticalParallaxPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        verticalViewPager = (VerticalViewPager) findViewById(R.id.pager_view);
-        verticalViewPager.setOffscreenPageLimit(3);
+        verticalParallaxPager = (VerticalParallaxPager) findViewById(R.id.pager_view);
+        verticalParallaxPager.setOffscreenPageLimit(3);
         //For Showing some part of next and Prev page
-        verticalViewPager.setClipToPadding(false);
-        verticalViewPager.setPadding(0, 0, 0, 150);
-        verticalViewPager.setPageMargin(convertPixelsToDp(-250, MainActivity.this));
+        verticalParallaxPager.setClipToPadding(false);
+        verticalParallaxPager.setPadding(0, 0, 0, 150);
+        verticalParallaxPager.setPageMargin(convertPixelsToDp(-250, MainActivity.this));
         setUpViewPager();
     }
 
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(introFirst);
         adapter.addFragment(introSecond);
         adapter.addFragment(introThird);
-        verticalViewPager.setAdapter(adapter);
+        verticalParallaxPager.setAdapter(adapter);
 
     }
 

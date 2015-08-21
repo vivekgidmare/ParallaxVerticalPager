@@ -9,13 +9,13 @@ import android.view.View;
 /**
  * Created by vivek on 21/08/15.
  */
-public class VerticalViewPager extends ViewPager {
-    public VerticalViewPager(Context context) {
+public class VerticalParallaxPager extends ViewPager {
+    public VerticalParallaxPager(Context context) {
         super(context);
         init();
     }
 
-    public VerticalViewPager(Context context, AttributeSet attrs) {
+    public VerticalParallaxPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
