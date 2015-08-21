@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             viewRoot = inflater.inflate(R.layout.intro_pager_view, container,
                     false);
+
             imageDrawableId = getArguments().getInt("imageId", R.drawable.intro_first_);
             textStringId = getArguments().getInt("introId");
             return viewRoot;
