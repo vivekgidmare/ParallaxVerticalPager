@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ParallaxVerticalPager</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="intro_first">Welcome to APP!</string>
+    <string name="intro_second">Few things to remember before using APP\n</string>
+    <string name="intro_third">The more you interact on APP, the more you learn.\n</string>
+</resources>
