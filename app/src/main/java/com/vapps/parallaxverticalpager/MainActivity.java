@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         verticalViewPager = (VerticalViewPager) findViewById(R.id.pager_view);
         verticalViewPager.setOffscreenPageLimit(3);
-        //For Showing some part of next and Prev page//////
+        //For Showing some part of next and Prev page
         verticalViewPager.setClipToPadding(false);
         verticalViewPager.setPadding(0, 0, 0, 150);
         verticalViewPager.setPageMargin(convertPixelsToDp(-250, MainActivity.this));

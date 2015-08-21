@@ -57,8 +57,12 @@ public class VerticalViewPager extends ViewPager {
 
                 View parallaxView = view.findViewById(tvId);
                 parallaxView.setTranslationY((float) (position * (view.getHeight() * 0.5)));
+
+                //To do Image Parallax
 //                View parallaxViewImage = view.findViewById(imgId);
 //                parallaxViewImage.setTranslationY((float) (position * (view.getHeight() * 0.2)));
+
+
             } else { // (1,+Infinity]
                 // This page is way off-screen to the right.
                 view.setAlpha(1);
